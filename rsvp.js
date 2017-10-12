@@ -11,6 +11,7 @@ function new_meal_choice(meal_choices) {
 	for (var i = 0; i < new_inputs.length; i++) {
 		if (new_inputs[i].type == "text") {
 			field = "name";
+			new_inputs[i].value = "";
 		} else {
 			field = "meal";
 		}
@@ -38,4 +39,3 @@ function remove_meal_choice() {
 	meal_choices.removeChild(meal_choices.lastElementChild);
 	return true;
 }
-//document.querySelector('input[name="rate"]:checked').value;
