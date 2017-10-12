@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Kyle + Mary</title>
+	<meta charset="utf-8">
+<!--<link rel="icon" type="image/png" href="./favicon.png" /> -->
+	<link rel="stylesheet" href="./main.css" type="text/css" />
+</head>
+
+<body id="index">
+
+<article id="featured">
+<h1>Glad you're coming!</h1>
+
+<form id="confirm_rsvp" action="#" method="POST">
+	Please tell us your meal preference and anyone accompanying you:<br>
+	<input type="button" name="add_meal" value="+">
+	<input type="button" name="rm_meal" value="-">
+	<div id="meal_choices">
+	<fieldset class="meal_choice">
+		<input type="text" name="name1" placeholder="Name"><br>
+		<input type="radio" name="meal1" value="pasta">Mushroom Ravioli
+		<input type="radio" name="meal1" value="chicken">Pesto Chicken with roasted potatoes
+		<input type="radio" name="meal1" value="fish">Salmon with mushroom risotto<br>
+	</fieldset>
+	</div>
+	<input type="hidden" name="_next" value="index.html" />
+	<input type="submit" value="RSVP">
+</form>
+</article>
+
+<footer id="contentinfo">
+<p>Party on.<p>
+</footer>
+
+<script src="rsvp.js"></script>
+
+</body>
+</html>
