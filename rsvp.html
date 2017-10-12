@@ -12,16 +12,16 @@
 <article id="featured">
 <h1>Glad you're coming!</h1>
 
-<form id="confirm_rsvp" action="#" method="POST">
+<form id="confirm_rsvp" action="https://formspree.io/nevernotpositive@protonmail.com" method="POST">
 	Please tell us your meal preference and anyone accompanying you:<br>
 	<input type="button" name="add_meal" value="+">
 	<input type="button" name="rm_meal" value="-">
 	<div id="meal_choices">
 	<fieldset class="meal_choice">
 		<input type="text" name="name1" placeholder="Name"><br>
-		<input type="radio" name="meal1" value="pasta">Mushroom Ravioli
-		<input type="radio" name="meal1" value="chicken">Pesto Chicken with roasted potatoes
-		<input type="radio" name="meal1" value="fish">Salmon with mushroom risotto<br>
+		<label><input type="radio" name="meal1" value="pasta">Mushroom Ravioli</label>
+		<label><input type="radio" name="meal1" value="chicken">Pesto Chicken with roasted potatoes</label>
+		<label><input type="radio" name="meal1" value="fish">Salmon with mushroom risotto</label><br>
 	</fieldset>
 	</div>
 	<input type="hidden" name="_next" value="index.html" />

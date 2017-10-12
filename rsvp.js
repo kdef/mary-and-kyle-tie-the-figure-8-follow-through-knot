@@ -4,16 +4,17 @@ document.forms.confirm_rsvp.elements.rm_meal.onclick = remove_meal_choice;
 function new_meal_choice(meal_choices) {
 	var new_node = meal_choices.lastElementChild.cloneNode(true);
 	var new_num = meal_choices.childElementCount + 1;
+	var new_inputs = new_node.getElementsByTagName("input");
 
 	var field = "";
 
-	for (var i = 0; i < new_node.children.length; i++) {
-		if (new_node.children[i].type == "text") {
+	for (var i = 0; i < new_inputs.length; i++) {
+		if (new_inputs[i].type == "text") {
 			field = "name";
 		} else {
 			field = "meal";
 		}
-		new_node.children[i].name = field + new_num.toString();
+		new_inputs[i].name = field + new_num.toString();
 	}
 
 	return new_node;
